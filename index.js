@@ -10,9 +10,12 @@ app.set("view engine","ejs");
 app.use(express.static(__dirname+"/public"));
 mongoose.connect("mongodb://localhost:27017/pumps");
 
+//setting up the routes
+// the base route
 app.get("/",function(req,res){
     res.render("index");
 });
+// signup route
 app.get("/signup",function(req,res){
     res.render("signup");
 });
