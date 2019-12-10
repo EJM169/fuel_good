@@ -20,7 +20,7 @@ app.get("/signup",function(req,res){
     res.render("signup");
 });
 
-app.post("/signup",function(req,res){
+/*app.post("/signup",function(req,res){
     var newUsers={name:req.body.Name,pass:req.body.Password,email:req.body.Email};
     newUser.create(newUsers,function(err,newCreated){
         if(err){
@@ -32,7 +32,7 @@ app.post("/signup",function(req,res){
 
         }
     });
-});
+}); */
 
 app.listen(1690,function(){
     console.log("Runnning on 1690");
