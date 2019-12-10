@@ -1,5 +1,6 @@
 var mongoose = require("mongoose");
 var passportLocalMongoose = require("passport-local-mongoose");
+//Creating the user schema
 var userSchema = new mongoose.Schema({
     username:String,
     password:String,
@@ -11,4 +12,4 @@ var userSchema = new mongoose.Schema({
 });
 
 userSchema.plugin(passportLocalMongoose);
-module.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model("user", userSchema); //Exporting the schema so that it can be use elsewhere
